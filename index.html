@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithin Ramesh | CEO & CISO | GRC & Information Security Specialist</title>
+    <style>
+        :root {
+            --primary-blue: #0f172a;
+            --secondary-blue: #1e293b;
+            --accent-gold: #f59e0b;
+            --text-main: #334155;
+            --text-light: #f8fafc;
+            --bg-body: #f1f5f9;
+            --card-shadow: 0 4px 6px -1px rgba(0,0,0,0.05), 0 2px 4px -1px rgba(0,0,0,0.06);
+            --card-hover-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            color: var(--text-main);
+            background-color: var(--bg-body);
+        }
+
+        nav {
+            background: #ffffff;
+            padding: 1rem 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-logo img { height: 45px; }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+            padding: 100px 10%;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .hero-img img {
+            width: 280px;
+            border-radius: 20px;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.3);
+            border: 4px solid rgba(255,255,255,0.1);
+        }
+
+        .hero-text h1 { font-size: 3.5rem; margin: 0; letter-spacing: -1px; }
+        .hero-text h2 { font-weight: 300; color: var(--accent-gold); margin-bottom: 25px; font-size: 1.6rem; letter-spacing: 1px; }
+        .hero-text p { font-size: 1.2rem; max-width: 750px; color: #cbd5e1; line-height: 1.8; }
+
+        .container { padding: 80px 10%; }
+        .section-title { text-align: center; margin-bottom: 60px; font-size: 2.2rem; color: var(--primary-blue); font-weight: 800; position: relative; }
+        .section-title::after { content: ''; display: block; width: 50px; height: 4px; background: var(--accent-gold); margin: 15px auto 0; border-radius: 2px; }
+
+        /* STANDARDIZED GRID SYSTEM */
+        .standard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 25px;
+        }
+
+        .standard-card {
+            background: white;
+            padding: 35px 20px;
+            border-radius: 16px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            border: 1px solid #e2e8f0;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        .standard-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--card-hover-shadow);
+            border-color: var(--accent-gold);
+        }
+
+        .standard-card img {
+            width: 100%;
+            max-width: 110px;
+            height: 70px; /* Fixed height for consistency */
+            object-fit: contain;
+            margin-bottom: 20px;
+            /* Now in full color by default */
+        }
+
+        .standard-card span {
+            display: block;
+            font-weight: 700;
+            color: var(--primary-blue);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .label-tag {
+            font-size: 0.65rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+        }
+
+        /* Ventures Section */
+        .ventures-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .venture-card {
+            background: #fff;
+            padding: 50px 40px;
+            border-radius: 24px;
+            text-align: center;
+            box-shadow: var(--card-shadow);
+            border: 1px solid #f1f5f9;
+        }
+
+        .venture-card img { height: 80px; margin-bottom: 25px; }
+
+        footer {
+            background: var(--primary-blue);
+            color: #94a3b8;
+            padding: 80px 10% 40px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero { flex-direction: column; text-align: center; padding: 60px 5%; }
+            .hero-img img { width: 220px; }
+            .hero-text h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-logo">
+            <img src="sdlogo.png" alt="Secdaddy Logo">
+        </div>
+        <div><strong>www.secdaddy.com</strong></div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-img">
+            <img src="Nithin.jpeg" alt="Nithin Ramesh">
+        </div>
+        <div class="hero-text">
+            <h1>Nithin Ramesh</h1>
+            <h2>CEO, CISO & GRC Specialist</h2>
+            <p>
+                A strategic leader with 14+ years of professional excellence, dedicated to securing the Middle East's most vital infrastructure. 
+                Expert in Information Security Governance, Risk, and Compliance across 
+                <strong>Shipping, Finance, Insurance, and Healthcare</strong>.
+            </p>
+        </div>
+    </header>
+
+    <section class="container" style="background: #fff;">
+        <h2 class="section-title">Some of the Global Credentials</h2>
+        <div class="standard-grid">
+            <div class="standard-card"><img src="cism-logo.png" alt="CISM"><span>CISM</span></div>
+            <div class="standard-card"><img src="cisa-logo.png" alt="CISA"><span>CISA</span></div>
+            <div class="standard-card"><img src="ceh-logo.png"  alt="CEH"><span>CEH</span></div>
+            <div class="standard-card"><img src="ccnp-logo.png" alt="CCNP"><span>CCNP</span></div>
+            <div class="standard-card"><img src="vcap-logo.png" alt="VCAP"><span>VCP-DCV</span></div>
+            <div class="standard-card"><img src="mcse-logo.png" alt="MCSE"><span>MCSE</span></div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="section-title">Few of the Professional Footprint</h2>
+        <div class="standard-grid">
+            <div class="standard-card">
+                <span class="label-tag">Former Tenure</span>
+                <img src="https://m42.ae/media/t4gfqxr1/m42-new.jpg" alt="M42 Mubadala">
+                <span>M42 (Mubadala)</span>
+            </div>
+            <div class="standard-card">
+                <span class="label-tag">Former Tenure</span>
+                <img src="https://media.licdn.com/dms/image/v2/C560BAQFOsI9-SSSisA/company-logo_200_200/company-logo_200_200/0/1630589779263/dublinhs_logo?e=2147483647&v=beta&t=jvx6VL6zjf7I_BV6Z1yoRPWj0i5O6YEimlbVBn75R6c" alt="Dublin Health">
+                <span>Dublin Health</span>
+            </div>
+             <div class="standard-card">
+                <span class="label-tag">Consultant</span>
+                <img src="https://secdaddy.odoo.com/web/image/4713-7b260be5/unimoni.webp" alt="Concept Middle East">
+                <span>UniMoney Exchange</span>
+            </div>
+            <div class="standard-card">
+                <span class="label-tag">Consultant</span>
+                <img src="https://secdaddy.odoo.com/web/image/4651-3cc69977/royal%20health.webp" alt="Royal Health">
+                <span>Royal Health</span>
+            </div>
+            <div class="standard-card">
+                <span class="label-tag">Consultant</span>
+                <img src="https://secdaddy.odoo.com/web/image/4739-ee39ee2e/RPM-01.webp" alt="Al Bustan">
+                <span>Response Plus Medical</span>
+            </div>
+            <div class="standard-card">
+                <span class="label-tag">Consultant</span>
+                <img src="https://secdaddy.odoo.com/web/image/4652-d6154c0f/1630670567842.webp" alt="Concept Middle East">
+                <span>Concept ME</span>
+            </div>
+            <div class="standard-card">
+                <span class="label-tag">Advisory</span>
+                <img src="https://secdaddy.odoo.com/web/image/4719-9bb23728/Cybex_F.svg" alt="Cybex-360">
+                <span>Cybex-360</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="background: #fff;">
+        <h2 class="section-title">Current Leadership</h2>
+        <div class="ventures-grid">
+            <div class="venture-card">
+                <img src="https://www.stellarisinfinite.com/web/image/website/1/logo/Stellarisinfinte?unique=078b27f" alt="Stellaris">
+                <h3>CEO</h3>
+                <p>Stellaris Infinite Investment</p>
+            </div>
+            <div class="venture-card">
+                <img src="https://secdaddy.odoo.com/web/image/website/1/logo/My%20Website?unique=b4c69fe" alt="Secdaddy">
+                <h3>CISO</h3>
+                <p>Secdaddy IT Solutions</p>
+            </div>
+            <div class="venture-card">
+                <img src="https://www.stellarisinfinite.com/web/image/1552-3e126fe8/tagIN%20%285%29%282%29%282%29.webp" alt="tagIN">
+                <h3>Founder</h3>
+                <p>tagIN Omni-channel Portal</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p style="color: white; font-size: 1.1rem; margin-bottom: 20px;">Excellence in Information Security & Organizational Resilience</p>
+            <p>&copy; 2026 Nithin Ramesh. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
